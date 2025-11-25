@@ -41,6 +41,30 @@ cmp.setup {
 ```
 Because `@unocss/autocomplete` suggest less before meeting `-`.
 
+### CoC (coc.nvim)
+
+To use the language server with coc.nvim, add the following to your `coc-settings.json`.
+CoC connects to the server over stdio, so make sure to include the `--stdio` argument.
+
+```json
+{
+  "languageserver": {
+    "unocss": {
+      "command": "unocss-language-server",
+      "args": [
+        "--stdio"
+      ],
+      "filetypes": [
+        "typescriptreact",
+        "javascriptreact",
+        "vue",
+        "svelte"
+      ]
+    }
+  }
+}
+```
+
 ## Related information
 
 * [Language Server Extension Guide](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide)
