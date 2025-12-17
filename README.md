@@ -20,6 +20,16 @@ A language server for unocss
 npm i unocss-language-server -g
 ```
 
+**For Nix users:**
+
+```sh
+# Install
+nix profile install github:xna00/unocss-language-server
+
+# or just run without installing
+nix run github:xna00/unocss-language-server -- --stdio
+```
+
 ## Usage
 
 [nvim-lspconfig server_configuration](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#unocss)
